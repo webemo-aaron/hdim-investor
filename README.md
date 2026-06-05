@@ -1,106 +1,82 @@
-# HDIM — HealthData-in-Motion
+# HDIM
 
-**Real-time healthcare quality measurement. Production-proven.**
+Real-time healthcare quality, interoperability, and operational workflows.
 
----
+This repository is the public-facing investor and prospective-company package for HDIM. It is intentionally narrower than the internal diligence set: it focuses on current, evidence-backed platform shape and keeps licensed content, sensitive internals, and customer-specific materials out of the public package.
 
-## Key Metrics
+## What HDIM Is
 
-| Metric | Value |
-|--------|-------|
-| Microservices | 59 |
-| Test Classes | 1,171 (8,000+ methods) |
-| API Endpoints | 62 documented (OpenAPI 3.0) |
-| HEDIS Measures | 80+ (including custom measure creation) |
-| Evaluation Speed | <2 seconds |
-| Deployment Time | 90 days (vs 18-24 months industry standard) |
-| Security Posture | CVE-remediated, ZAP-scanned, 360-assured |
+HDIM is a multi-service healthcare platform organized around:
 
----
+- standards-native clinical and interoperability services
+- event-driven backend execution patterns
+- gateway-mediated ingress and shared platform controls
+- multi-tenant security, audit, tracing, and persistence foundations
+- operational workflows spanning quality, patient, analytics, and related services
 
-## What HDIM Does
+The current code-validated platform inventory behind this package includes:
 
-Hospitals and health plans lose $500K-2M per year for every HEDIS compliance gap. Current solutions require 18-24 months to deploy, lock organizations into rigid vendor ecosystems, and still miss care gaps that cost real money.
+- 59 Gradle-managed backend service modules
+- 61 service directories under `backend/modules/services`
+- 171 backend controller files
+- 362 Liquibase changelog files
 
-HDIM evaluates quality measures in real time — under 2 seconds per patient. It detects care gaps automatically, triggers closure workflows, and integrates with any EHR system through native FHIR R4 support. Epic, Cerner, Athena — all work out of the box.
+This package is designed for fast external review. Deeper architecture and diligence materials are available separately under NDA.
 
-What makes HDIM different is depth. An event-driven architecture built on 59 production microservices creates a 2+ year technical moat. This is not a prototype — 1,171 test classes, revenue cycle capabilities, a custom measure builder, CMO onboarding workflows, and full security hardening prove enterprise maturity that competitors cannot replicate quickly.
+## Start Here
 
----
+| Audience | Read First | Time |
+|---|---|---:|
+| Executive or investor intro | [executive/ONE-PAGER.md](executive/ONE-PAGER.md) | 2 min |
+| General business review | [executive/PITCH-DECK.md](executive/PITCH-DECK.md) | 10 min |
+| Platform understanding | [platform/PLATFORM-OVERVIEW.md](platform/PLATFORM-OVERVIEW.md) | 10 min |
+| Technical diligence preview | [platform/ARCHITECTURE.md](platform/ARCHITECTURE.md) | 15 min |
+| Security and disclosure boundary | [platform/SECURITY-COMPLIANCE.md](platform/SECURITY-COMPLIANCE.md) | 8 min |
 
-## Platform Capabilities
+## Package Map
 
-| Capability | Description |
-|------------|-------------|
-| Quality Measure Engine | 80+ HEDIS measures, real-time CQL evaluation |
-| Care Gap Detection | Automated identification and closure workflows |
-| Revenue Cycle (Wave-1) | Claims processing, remittance reconciliation, price transparency |
-| FHIR R4 Interoperability | Native integration with Epic, Cerner, Athena |
-| Custom Measure Builder | Create and deploy custom quality measures via UI |
-| CMO Onboarding | Dashboard workflows and acceptance playbooks for health plan CMOs |
-| Clinical Portal | Angular-based clinical workspace with operations dashboards |
-| Operations Orchestration | 16-class gateway framework for enterprise operations |
-| Security and Compliance | HIPAA engineered, CVE remediation, ZAP scanning, 360 assurance |
+### Executive
 
----
+- [ONE-PAGER.md](executive/ONE-PAGER.md)
+- [PITCH-DECK.md](executive/PITCH-DECK.md)
+- [FAQ.md](executive/FAQ.md)
 
-## For Investors — Start Here
+### Platform
 
-| Your Role | Start With | Time |
-|-----------|------------|------|
-| Quick evaluation | [One-Pager](executive/ONE-PAGER.md) | 30 sec |
-| Business investor | [Pitch Deck](executive/PITCH-DECK.md) | 5 min |
-| Technical DD | [Architecture](platform/ARCHITECTURE.md) | 20 min |
-| Full package | [Platform Overview](platform/PLATFORM-OVERVIEW.md) | 15 min |
+- [PLATFORM-OVERVIEW.md](platform/PLATFORM-OVERVIEW.md)
+- [ARCHITECTURE.md](platform/ARCHITECTURE.md)
+- [SECURITY-COMPLIANCE.md](platform/SECURITY-COMPLIANCE.md)
 
----
+### Traction
 
-## Complete Document Index
+- [DEVELOPMENT-VELOCITY.md](traction/DEVELOPMENT-VELOCITY.md)
+- [PRODUCT-MILESTONES.md](traction/PRODUCT-MILESTONES.md)
+- [PRODUCTION-READINESS.md](traction/PRODUCTION-READINESS.md)
 
-| Document | Path | Description |
-|----------|------|-------------|
-| One-Pager | [executive/ONE-PAGER.md](executive/ONE-PAGER.md) | Email-friendly summary |
-| Pitch Deck | [executive/PITCH-DECK.md](executive/PITCH-DECK.md) | 12-slide meeting deck |
-| FAQ | [executive/FAQ.md](executive/FAQ.md) | Investor questions and answers |
-| Platform Overview | [platform/PLATFORM-OVERVIEW.md](platform/PLATFORM-OVERVIEW.md) | Full-stack capabilities walkthrough |
-| Architecture | [platform/ARCHITECTURE.md](platform/ARCHITECTURE.md) | Event sourcing, CQRS, FHIR deep-dive |
-| Security and Compliance | [platform/SECURITY-COMPLIANCE.md](platform/SECURITY-COMPLIANCE.md) | HIPAA, CVE, security posture |
-| Development Velocity | [traction/DEVELOPMENT-VELOCITY.md](traction/DEVELOPMENT-VELOCITY.md) | Execution pace and engineering metrics |
-| Product Milestones | [traction/PRODUCT-MILESTONES.md](traction/PRODUCT-MILESTONES.md) | What shipped and when |
-| Production Readiness | [traction/PRODUCTION-READINESS.md](traction/PRODUCTION-READINESS.md) | Production readiness checklist |
-| Code Samples | [technical/CODE-SAMPLES.md](technical/CODE-SAMPLES.md) | Representative production code |
-| Competitive Analysis | [technical/COMPETITIVE-ANALYSIS.md](technical/COMPETITIVE-ANALYSIS.md) | Head-to-head competitive positioning |
-| Deployment Guide | [technical/DEPLOYMENT-GUIDE.md](technical/DEPLOYMENT-GUIDE.md) | Hospital deployment procedures |
+### Technical
 
----
+- [CODE-SAMPLES.md](technical/CODE-SAMPLES.md)
+- [COMPETITIVE-ANALYSIS.md](technical/COMPETITIVE-ANALYSIS.md)
+- [DEPLOYMENT-GUIDE.md](technical/DEPLOYMENT-GUIDE.md)
 
-## Technology Highlights
+## Public Package Rules
 
-- Java 21, Spring Boot 3.x
-- PostgreSQL 16 (29 independent databases)
-- Apache Kafka (event sourcing backbone)
-- FHIR R4 native (HAPI FHIR 7.x)
-- Angular 17+ (Clinical Portal)
-- Docker + Kubernetes-ready
-- OpenTelemetry distributed tracing
+- This repo is public-facing and should remain public-safe.
+- It should not include licensed HEDIS content, restricted standards text, customer data, or sensitive source-level internals that are not necessary for external understanding.
+- It should not repeat stale fundraising asks, outdated TAM claims, or older platform counts that conflict with the current code-validated inventory.
+- Where deeper diligence is appropriate, this package should point readers to NDA-protected follow-up materials rather than embedding restricted detail here.
 
----
+## Current Positioning
 
-## Market Opportunity
+The strongest external narrative for HDIM today is:
 
-| Dimension | Value |
-|-----------|-------|
-| TAM | $18B (healthcare quality measurement) |
-| Addressable | $2-3B (automation opportunity) |
-| Growth | 12%+ annually (value-based care mandate) |
-| Customers | 2,000+ organizations actively seeking solutions |
-
----
+1. A substantial healthcare platform exists now, not just a concept.
+2. The platform is standards-native and operationally disciplined.
+3. The engineering story is stronger when it is evidence-backed and transparent about gaps.
+4. Public materials should be conservative; deeper architecture and readiness materials should be shared under NDA.
 
 ## Contact
 
-Aaron Bentley, Founder and CEO — aaron@mahoosuc.solutions
+For current diligence materials, product review, or a technical walkthrough, contact the HDIM team directly.
 
----
-
-*Confidential — For Investor Use Only | March 2026*
+Confidential sharing beyond this package is handled separately.

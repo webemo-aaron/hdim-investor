@@ -1,48 +1,35 @@
-# HDIM — Real-Time Healthcare Quality Measurement
+# HDIM One-Pager
 
-## The Problem
+## What It Is
 
-Healthcare organizations lose $500K-2M annually for every 1% gap in HEDIS quality compliance. Current solutions from Epic and Optum require 18-24 month implementations and evaluate quality measures overnight — by the time gaps are identified, the intervention window has passed.
+HDIM is a healthcare platform for real-time quality measurement, care-gap workflows, interoperability, and related operational services.
 
-## The Solution
+## Why It Matters
 
-- Evaluate 80+ HEDIS quality measures in under 2 seconds (vs. overnight batch processing)
-- Deploy in 90 days (vs. 18-24 months for incumbent solutions)
-- Works with any EHR system via FHIR R4 (Epic, Cerner, Athena)
-- Revenue cycle capabilities: claims processing, remittance reconciliation, price transparency
-- Custom measure creation: health plans can build and deploy their own quality measures
+Most healthcare quality and operational workflows remain fragmented across legacy tools, delayed batch processing, and vendor-specific integration models. HDIM is positioned around a more integrated operating model: standards-native data handling, event-driven execution, and shared platform controls across multiple service domains.
 
-## What's Built
+## What Exists Today
 
-| Metric | Value |
-|--------|-------|
-| Services | 59 microservices, production-tested |
-| Tests | 1,171 test classes (8,000+ methods) |
-| API Coverage | 62 endpoints (OpenAPI 3.0) |
-| HEDIS Measures | 80+ (with custom measure builder) |
-| Security | CVE-remediated, ZAP-scanned, HIPAA-engineered |
-| Architecture | Event sourcing + CQRS (2+ year replication moat) |
+- 59 Gradle-managed backend service modules
+- 61 service directories under the backend services tree
+- gateway services for admin, clinical, and FHIR ingress
+- clinical, patient, quality, consent, interoperability, analytics, workflow, and platform services
+- shared security, audit, tracing, persistence, and API-contract infrastructure
 
-## Market
+## What Makes It Distinctive
 
-- $18B TAM in healthcare quality measurement
-- 2,000+ potential customers (health plans, ACOs, health systems)
-- Growing 12%+ annually driven by CMS value-based care mandates
+- Standards-native healthcare architecture with FHIR-centered service patterns
+- Event-driven and event-sourced patterns in key domains
+- Shared multi-tenant platform controls rather than ad hoc per-service foundations
+- Stronger-than-usual engineering evidence through inventories, validation artifacts, and architecture documentation
 
-## The Ask
+## How To Review
 
-Series A: $5-7M for sales team buildout, customer success, and pilot deployments. 18-month runway to $2-4M ARR with 3-5 enterprise deployments. Exit potential: $200-400M (9-13x return).
+- Executive summary: [PITCH-DECK.md](PITCH-DECK.md)
+- Platform walkthrough: [../platform/PLATFORM-OVERVIEW.md](../platform/PLATFORM-OVERVIEW.md)
+- Technical architecture preview: [../platform/ARCHITECTURE.md](../platform/ARCHITECTURE.md)
+- Security and disclosure boundary: [../platform/SECURITY-COMPLIANCE.md](../platform/SECURITY-COMPLIANCE.md)
 
-## Next Steps
+## Share Boundary
 
-- 60-minute technical demo and architecture walkthrough available
-- Full due diligence package: [github.com/webemo-aaron/hdim-investor](https://github.com/webemo-aaron/hdim-investor)
-
-## Contact
-
-Aaron Bentley, Founder & CEO
-aaron@mahoosuc.solutions
-
----
-
-*Confidential — For Investor Use Only | March 2026*
+This one-pager is public-safe. Deeper technical diligence, readiness evidence, and controlled-content discussions should move to the NDA package rather than be expanded in this public repo.
