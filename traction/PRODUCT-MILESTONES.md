@@ -40,7 +40,7 @@ The first implementation wave delivered:
 
 ### Atlas Nexus v2 operator surface
 
-The cloud operator-evidence tier shipped its v2 services: an operator inbox that consumes a signed, operator-safe evidence outbox; a syndromic-surveillance service producing weekly z-scored signal buckets and outbreak indicators; and care-gap closure handoff that pseudonymizes and applies a small-cell floor (k ≥ 10) before any aggregate leaves the customer boundary.
+The cloud operator-evidence tier shipped its v2 services: an operator inbox that consumes a signed, operator-safe evidence outbox; a syndromic-surveillance service producing weekly z-scored signal buckets and outbreak indicators; and care-gap closure handoff that pseudonymizes and applies a small-cell floor (k ≥ 11) before any aggregate leaves the customer boundary.
 
 ### DQM integration
 

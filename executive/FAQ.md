@@ -12,7 +12,7 @@ DQM is the on-premises data-quality trust authority and the product's entry wedg
 
 ## What is Atlas Nexus?
 
-Atlas Nexus is the cloud operator-evidence tier. It ingests operator-safe aggregates from customer HDIM deployments — care-gap closures, quality signals, integration readiness, and syndromic indicators — so operators can review and triage cross-customer evidence without ever seeing patient-level PHI. Privacy is enforced on both sides: a deny-list of sensitive keys, pseudonymized identifiers, and a small-cell floor (k ≥ 10). Between DQM and Atlas Nexus sits the **Data Motion Platform**, the customer-boundary runtime that runs care-gap and HEDIS quality workflows on DQM-validated signals under identity and consent controls.
+Atlas Nexus is the cloud operator-evidence tier. It ingests operator-safe aggregates from customer HDIM deployments — care-gap closures, quality signals, integration readiness, and syndromic indicators — so operators can review and triage cross-customer evidence without ever seeing patient-level PHI. Privacy is enforced on both sides: a deny-list of sensitive keys, pseudonymized identifiers, and a small-cell floor (k ≥ 11). Between DQM and Atlas Nexus sits the **Data Motion Platform**, the customer-boundary runtime that runs care-gap and HEDIS quality workflows on DQM-validated signals under identity and consent controls.
 
 ## What is actually built today?
 
