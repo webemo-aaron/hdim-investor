@@ -38,6 +38,14 @@ The first implementation wave delivered:
 - shared contract and shared infrastructure documentation upgrades
 - docs-to-artifact validation gates
 
+### Atlas Nexus v2 operator surface
+
+The cloud operator-evidence tier shipped its v2 services: an operator inbox that consumes a signed, operator-safe evidence outbox; a syndromic-surveillance service producing weekly z-scored signal buckets and outbreak indicators; and care-gap closure handoff that pseudonymizes and applies a small-cell floor (k ≥ 10) before any aggregate leaves the customer boundary.
+
+### DQM integration
+
+Data Quality Monitor integration is wired end-to-end: five-dimension feed scoring, HMAC-signed webhook delivery into the Atlas Nexus inbox, and an operator-safe outbox so only de-identified aggregates cross outward. This establishes the "land with feed quality" entry wedge.
+
 ## Why These Milestones Matter
 
 These are not cosmetic documentation updates. They improve how the platform can be explained, verified, and diligenced by an external technical or investor audience.

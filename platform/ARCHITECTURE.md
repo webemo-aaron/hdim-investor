@@ -28,6 +28,16 @@ Shared platform modules cover:
 
 These shared controls matter because they show platform-level standardization across a broad service estate.
 
+### 4. Boundary-respecting three-tier operating model
+
+The platform is organized so identified data stays inside the customer boundary while operators still receive cross-customer evidence:
+
+- **DQM** (on-prem) holds the identified-data authority, scores feed quality across five dimensions, and de-identifies before emitting.
+- **Data Motion Platform** runs care-gap and HEDIS quality workflows at the customer boundary on DQM-validated signals, under identity and consent controls.
+- **Atlas Nexus** (cloud) receives only operator-safe aggregates — deny-list enforced, pseudonymized, small-cell floor (k ≥ 10) — and never sees PHI.
+
+This separation is the architectural expression of "move the question, not the data": identified processing happens at the boundary; only validated, aggregate signals cross outward.
+
 ## Platform Topology
 
 ```text

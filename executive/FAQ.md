@@ -4,6 +4,16 @@
 
 HDIM is a healthcare platform for real-time quality measurement, care-gap workflows, interoperability, and related operational services. It is best understood as a platform with multiple service domains rather than a single application. See [../platform/PLATFORM-OVERVIEW.md](../platform/PLATFORM-OVERVIEW.md).
 
+The platform is organized as an expanding-wedge product model: **Data Quality Monitor (DQM) → Data Motion Platform → Atlas Nexus**. See the next two questions and [../platform/PLATFORM-OVERVIEW.md](../platform/PLATFORM-OVERVIEW.md).
+
+## What is Data Quality Monitor (DQM)?
+
+DQM is the on-premises data-quality trust authority and the product's entry wedge. It scores inbound and outbound healthcare feeds across five dimensions — completeness, conformance, accuracy, consistency, timeliness — detects baseline drift, and gates feed/identity readiness. DQM runs inside the customer boundary, holds the identified-data authority, and de-identifies before emitting; it sends only operator-safe aggregates outward. Feed-grading is a need common to every data-sharing healthcare organization, which is why it anchors the wedge.
+
+## What is Atlas Nexus?
+
+Atlas Nexus is the cloud operator-evidence tier. It ingests operator-safe aggregates from customer HDIM deployments — care-gap closures, quality signals, integration readiness, and syndromic indicators — so operators can review and triage cross-customer evidence without ever seeing patient-level PHI. Privacy is enforced on both sides: a deny-list of sensitive keys, pseudonymized identifiers, and a small-cell floor (k ≥ 10). Between DQM and Atlas Nexus sits the **Data Motion Platform**, the customer-boundary runtime that runs care-gap and HEDIS quality workflows on DQM-validated signals under identity and consent controls.
+
 ## What is actually built today?
 
 The current code-validated inventory supports a substantial multi-service platform: 59 Gradle-managed backend service modules, 61 service directories, domain gateways, and shared infrastructure for security, audit, tracing, and persistence. See [../traction/PRODUCT-MILESTONES.md](../traction/PRODUCT-MILESTONES.md).
