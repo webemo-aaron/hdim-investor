@@ -34,7 +34,7 @@ The platform is organized so identified data stays inside the customer boundary 
 
 - **DQM** (on-prem) holds the identified-data authority, scores feed quality across five dimensions, and de-identifies before emitting.
 - **Data Motion Platform** runs care-gap and HEDIS quality workflows at the customer boundary on DQM-validated signals, under identity and consent controls.
-- **Atlas Nexus** (cloud) receives only operator-safe aggregates — deny-list enforced, pseudonymized, small-cell floor (k ≥ 11) — and never sees PHI.
+- **Atlas Nexus** (cloud) receives only operator-safe aggregates — deny-list enforced, de-identified, small-cell floor (k ≥ 11) — so operators do not see patient-level PHI.
 
 This separation is the architectural expression of "move the question, not the data": identified processing happens at the boundary; only validated, aggregate signals cross outward.
 

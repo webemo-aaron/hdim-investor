@@ -21,7 +21,7 @@ The product maps onto three tiers that together keep PHI inside the customer bou
 
 1. **Data Quality Monitor (DQM)** — the on-premises data-quality trust authority. Scores inbound and outbound feeds across five dimensions (completeness, conformance, accuracy, consistency, timeliness), detects baseline drift, and gates feed/identity readiness. Holds the identified-data authority and de-identifies before emitting; only operator-safe aggregates leave the environment.
 2. **Data Motion Platform** — the customer-boundary runtime. Runs care-gap detection and HEDIS quality-measure workflows on DQM-validated signals, under identity and consent controls. This is where controlled data movement happens, inside the customer environment.
-3. **Atlas Nexus** — the cloud operator-evidence tier. Ingests operator-safe aggregates (care-gap closures, quality signals, integration readiness, syndromic indicators) into an operator inbox and surveillance views. Never sees PHI: deny-list enforcement on producer and consumer sides, pseudonymized identifiers, and a small-cell floor (k ≥ 11).
+3. **Atlas Nexus** — the cloud operator-evidence tier. Ingests operator-safe aggregates (care-gap closures, quality signals, integration readiness, syndromic indicators) into an operator inbox and surveillance views. No patient-level PHI: deny-list enforcement on producer and consumer sides, de-identification before emit, and a small-cell floor (k ≥ 11).
 
 The expanding wedge: land with feed quality (DQM), expand into workflows (Data Motion Platform), surface operator-safe intelligence (Atlas Nexus) — the question travels to the data; PHI does not leave the boundary.
 
