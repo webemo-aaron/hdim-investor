@@ -26,7 +26,7 @@ An expanding-wedge model: land with feed quality, expand into workflows, surface
 
 - **Data Quality Monitor (DQM)** — on-prem data-quality trust authority; scores inbound/outbound feeds across five dimensions and gates feed/identity readiness. Holds the identified-data authority; de-identifies before emitting. *(The land: feed-grading is a need every data-sharing organization shares.)*
 - **Data Motion Platform** — customer-boundary runtime for care-gap detection and HEDIS quality workflows, on DQM-validated signals, under identity and consent controls. *(The expand.)*
-- **Atlas Nexus** — cloud operator-evidence tier; cross-customer operator inbox, syndromic surveillance, and integration-readiness signals. Never sees PHI: deny-list + small-cell floor (k ≥ 11). *(The operating layer.)*
+- **Atlas Nexus** — cloud operator-evidence tier; cross-customer operator inbox, syndromic surveillance, and integration-readiness signals. No patient-level PHI: de-identified, deny-list + small-cell floor (k ≥ 11). *(The operating layer.)*
 
 Through-line: move the question, not the data — PHI never has to leave the customer boundary.
 
