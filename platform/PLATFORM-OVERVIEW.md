@@ -29,8 +29,8 @@ The expanding wedge: land with feed quality (DQM), expand into workflows (Data M
 
 Current code-validated inventory includes:
 
-- 59 Gradle-managed backend service modules
-- 61 backend service directories
+- 77 Gradle-registered backend service modules
+- 80 backend service directories
 - gateway services for admin, clinical, and FHIR ingress
 - 4 shared API-contract modules
 - 15 shared infrastructure modules

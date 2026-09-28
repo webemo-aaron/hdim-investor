@@ -16,7 +16,7 @@ Atlas Nexus is the cloud operator-evidence tier. It ingests operator-safe aggreg
 
 ## What is actually built today?
 
-The current code-validated inventory supports a substantial multi-service platform: 59 Gradle-managed backend service modules, 61 service directories, domain gateways, and shared infrastructure for security, audit, tracing, and persistence. See [../traction/PRODUCT-MILESTONES.md](../traction/PRODUCT-MILESTONES.md).
+The current code-validated inventory supports a substantial multi-service platform: 77 Gradle-registered backend service modules, 80 service directories, 250 backend controller classes, and 481 Liquibase changelog files. Measured by script from `git ls-tree` at commit `ed65a2c9`. Counting rules for each figure are in [FOUNDER.md](FOUNDER.md); they supersede an earlier published set of 59 / 171 / 362, which understated the platform by roughly thirty percent.
 
 ## What is technically distinctive?
 

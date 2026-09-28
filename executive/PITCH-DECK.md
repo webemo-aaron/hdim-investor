@@ -34,10 +34,10 @@ Through-line: move the question, not the data — PHI never has to leave the cus
 
 Current code-validated platform inventory:
 
-- 59 Gradle-managed backend service modules
-- 61 backend service directories
-- 171 backend controller files
-- 362 Liquibase changelog files
+- 77 Gradle-registered backend service modules
+- 80 backend service directories
+- 250 backend controller classes
+- 481 Liquibase changelog files (420 migration changelogs plus 61 aggregators)
 - shared domain, infrastructure, and API-contract modules
 
 ## Slide 5: Why It Is Credible

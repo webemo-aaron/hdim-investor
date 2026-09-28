@@ -16,10 +16,12 @@ HDIM is a multi-service healthcare platform organized around:
 
 The current code-validated platform inventory behind this package includes:
 
-- 59 Gradle-managed backend service modules
-- 61 service directories under `backend/modules/services`
-- 171 backend controller files
-- 362 Liquibase changelog files
+- 77 Gradle-registered backend service modules
+- 80 service directories under `backend/modules/services`
+- 250 backend controller classes
+- 481 Liquibase changelog files (61 of them per-module aggregators, leaving 420 migration changelogs)
+
+Measured by script from `git ls-tree` at commit `ed65a2c9`. Counting rules for each figure are in [executive/FOUNDER.md](executive/FOUNDER.md); they supersede an earlier published set of 59 / 171 / 362, which understated the platform by roughly thirty percent.
 
 This package is designed for fast external review. Deeper architecture and diligence materials are available separately under NDA.
 
@@ -27,6 +29,7 @@ This package is designed for fast external review. Deeper architecture and dilig
 
 | Audience | Read First | Time |
 |---|---|---:|
+| Who stands it up, and who runs it after | [executive/FOUNDER.md](executive/FOUNDER.md) | 4 min |
 | Executive or investor intro | [executive/ONE-PAGER.md](executive/ONE-PAGER.md) | 2 min |
 | General business review | [executive/PITCH-DECK.md](executive/PITCH-DECK.md) | 10 min |
 | Platform understanding | [platform/PLATFORM-OVERVIEW.md](platform/PLATFORM-OVERVIEW.md) | 10 min |
@@ -37,6 +40,7 @@ This package is designed for fast external review. Deeper architecture and dilig
 
 ### Executive
 
+- [FOUNDER.md](executive/FOUNDER.md) — who stands the deployment up, what is measured, what is not claimed
 - [ONE-PAGER.md](executive/ONE-PAGER.md)
 - [PITCH-DECK.md](executive/PITCH-DECK.md)
 - [FAQ.md](executive/FAQ.md)
@@ -65,6 +69,9 @@ This package is designed for fast external review. Deeper architecture and dilig
 - It should not include licensed HEDIS content, restricted standards text, customer data, or sensitive source-level internals that are not necessary for external understanding.
 - It should not repeat stale fundraising asks, outdated TAM claims, or older platform counts that conflict with the current code-validated inventory.
 - Where deeper diligence is appropriate, this package should point readers to NDA-protected follow-up materials rather than embedding restricted detail here.
+- **No named prospect organizations.** Prior professional history and the target list overlap, so naming an organization here would disclose pipeline and invite the inference that a commercial relationship exists. Vendor and product names (InterSystems, IRIS/HealthShare, Mirth, Rhapsody, IBM Initiate) are technology, not pipeline, and are allowed.
+- **No ask, and no financing content of any kind** — no round, terms, valuation, cap table, use of funds, runway, or investment call to action. This package is written to establish credibility, not to solicit; that is deliberate and is what lets it be published at all.
+- **Every published figure carries its counting rule and the commit it was measured at.** A number without one cannot be checked, and this package has already had to retract a stale set that understated the platform by roughly thirty percent.
 
 ## Current Positioning
 

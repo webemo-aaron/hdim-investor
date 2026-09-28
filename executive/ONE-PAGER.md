@@ -20,8 +20,8 @@ The wedge lets HDIM begin with something every healthcare organization needs —
 
 ## What Exists Today
 
-- 59 Gradle-managed backend service modules
-- 61 service directories under the backend services tree
+- 77 Gradle-registered backend service modules
+- 80 service directories under the backend services tree
 - gateway services for admin, clinical, and FHIR ingress
 - clinical, patient, quality, consent, interoperability, analytics, workflow, and platform services
 - shared security, audit, tracing, persistence, and API-contract infrastructure
